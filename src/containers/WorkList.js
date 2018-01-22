@@ -37,7 +37,7 @@ class WorkList extends Component {
 
                         return (
                         <div className={itemClasses} key={item.slug}>
-                            <Link to={`/en/works/${item.slug}`}>{item.name}</Link>
+                            <Link to={`/${lang}/works/${item.slug}`}>{item.name}</Link>
                         </div>
                         )
                     })}

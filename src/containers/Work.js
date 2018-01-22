@@ -8,8 +8,6 @@ class Work extends Component {
     constructor(props) {
         super(props)
 
-        console.log('Work')
-
         // sort by date
         props.data.works.sort((a, b) => b.date.localeCompare(a.date))
 

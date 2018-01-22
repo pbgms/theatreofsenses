@@ -86,7 +86,7 @@ class App extends Component {
 
   render() {
     console.log('App', this.props);
-console.log(this.state)
+
     const pathname = this.state.current;
 
     const lang = this.state.lang;
@@ -160,7 +160,6 @@ console.log(this.state)
                 <Route path={`/:lang/about`} render={() => <About lang={lang} />} />
                 <Route path={`/:lang/events`} render={() => <Events lang={lang} />} />
                 <Route path={`/:lang/works`} render={() => <WorkList lang={lang} />} />
-                    {/*<Route path="*" component={404} />*/}
               </Switch>
 
             </div>
