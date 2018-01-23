@@ -85,7 +85,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('App', this.props);
 
     const pathname = this.state.current;
 
@@ -154,13 +153,12 @@ class App extends Component {
 
             <div className="App-right">
 
-
                 <Switch>
-                <Route path="/" exact render={() => null} />
-                <Route path={`/:lang/about`} render={() => <About lang={lang} />} />
-                <Route path={`/:lang/events`} render={() => <Events lang={lang} />} />
-                <Route path={`/:lang/works`} render={() => <WorkList lang={lang} />} />
-              </Switch>
+                    <Route path="/" exact render={() => null} />
+                    <Route path={`/:lang/about`} render={() => <About lang={lang} />} />
+                    <Route path={`/:lang/events`} render={() => <Events lang={lang} />} />
+                    <Route path={`/:lang/works`} component={WorkList} />
+                </Switch>
 
             </div>
 

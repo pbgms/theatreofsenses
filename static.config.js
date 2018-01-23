@@ -11,6 +11,8 @@ export default {
 
         const array = languages.map(lang => {
 
+            const worksData = filterLanguage(JSON.parse(JSON.stringify(works)), lang)
+
             return [
                 {
                     path: `/${lang}/about`,
@@ -29,12 +31,15 @@ export default {
                 {
                     path: `/${lang}/works`,
                     getProps: () => ({
-                        data: filterLanguage(JSON.parse(JSON.stringify(works)), lang),
+                        works: worksData,
+                        lang
                     }),
-                    children: works.works.map(work => ({
+                    children: worksData.works.map(work => ({
                         path: `/${work.slug}`,
                         getProps: () => ({
-                            data: filterLanguage(Object.assign({}, {labels: works.labels}, work), lang),
+                            works: worksData,
+                            work,
+                            lang
                         }),
                     }))
 

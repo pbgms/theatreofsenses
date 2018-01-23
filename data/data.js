@@ -436,8 +436,8 @@ export const works = {
             date: '2017/12/12',
             name: {en: 'Weight. Gravity', lt: 'Svoris. Trauka'},
             description: {
-                en: 'en description',
-                lt: 'lt description'
+                en: 'Experiment inviting the audience to experience their body and emotions using special object, created to have weight, shift their shapes, bring us closer to a subtile reletion between human and the Earth.',
+                lt: 'Eksperimentas, kviečiantis žiūrovą tyrinėti kūną ir emocijas per specialius objektus, kurių paskirtis - sverti, keisti formą, priartinti prie subtilaus ryšio tarp žmogaus ir Žemės.'
             },
             readMore: {
                 en: '',
@@ -469,8 +469,8 @@ export const works = {
             date: '2017/09/12',
             name: {en: 'Paintings for senses: Čiurlionis', lt: 'Pojūčių paveikslai: Čiurlionis'},
             description: {
-                en: 'en description',
-                lt: 'lt description'
+                en: 'Pojūčių paveikslai. M. K. Čiurlionis - tai sensorinė ekskursija po M. K. Čiurlionio muziejaus sales. Jos metu lankytojai turės galimybę pažinti jose esančius kūrinius nenaudodami regos. Aktoriai - gidai, naudodami garso, kvapo, lytėjimo, judesio pojūčius, atkurs atrinktų paveikslų įspūdį. Šios ekskursijos dalyvis patirs meno kūrinį pasiduodamas savo ir kūrinį interpretuojančių aktorių vaizduotei. Tie, kurie stebės veiksmą neužsirišę akių, regės subtiliomis formomis atgyjančius paveikslus – kaip aktorių ir dalyvių veidai pasineria į tapytojo pastelinę miglą, keliauja mistinėje laidotuvių procesijoje arba žaidžia kaip vaikai pasakoje tarp kalnų ir paukščių.',
+                lt: 'Pojūčių paveikslai. M. K. Čiurlionis - tai sensorinė ekskursija po M. K. Čiurlionio muziejaus sales. Jos metu lankytojai turės galimybę pažinti jose esančius kūrinius nenaudodami regos. Aktoriai - gidai, naudodami garso, kvapo, lytėjimo, judesio pojūčius, atkurs atrinktų paveikslų įspūdį. Šios ekskursijos dalyvis patirs meno kūrinį pasiduodamas savo ir kūrinį interpretuojančių aktorių vaizduotei. Tie, kurie stebės veiksmą neužsirišę akių, regės subtiliomis formomis atgyjančius paveikslus – kaip aktorių ir dalyvių veidai pasineria į tapytojo pastelinę miglą, keliauja mistinėje laidotuvių procesijoje arba žaidžia kaip vaikai pasakoje tarp kalnų ir paukščių.'
             },
             readMore: {
                 en: '',
@@ -482,7 +482,23 @@ export const works = {
                 lt: 'Režisierė: Karolina ŽERNYTĖ \n Dailininkė: Šarūnė PEČIUKONYTĖ \n Kūrėjai: Aistė JANČIŪTĖ, ' +
                 'Raminta ŠNIAUKŠTAITĖ, Artūras LEPIOCHINAS, Jaunius PISARAVIČIUS, Vaidotas BAČIANSKAS'
             },
-            images: [],
+            images: [
+                {src: 'ciurlionis/1-2.JPG'},
+                {src: 'ciurlionis/1-3.JPG'},
+                {src: 'ciurlionis/1-4.JPG'},
+                {src: 'ciurlionis/1-5.JPG'},
+                {src: 'ciurlionis/1-6.JPG'},
+                {src: 'ciurlionis/1-7.JPG'},
+                {src: 'ciurlionis/1-8.JPG'},
+                {src: 'ciurlionis/1-9.JPG'},
+                {src: 'ciurlionis/1-10.JPG'},
+                {src: 'ciurlionis/1-11.JPG'},
+                {src: 'ciurlionis/1-12.JPG'},
+                {src: 'ciurlionis/1-13.JPG'},
+                {src: 'ciurlionis/1-14.JPG'},
+                {src: 'ciurlionis/1-15.JPG'},
+                {src: 'ciurlionis/1-16.JPG'}
+            ],
             imagesAuthor: '',
             rider: {
                 duration: {en: '60 minutes', lt: '60 minučių'},
@@ -501,8 +517,8 @@ export const works = {
             date: '2017/03/04',
             name: {en: 'Open skin', lt: 'Atvira oda'},
             description: {
-                en: 'en description',
-                lt: 'lt description'
+                en: '„Atvira oda“ – tai teatrinis ritualas, skirtas tik mums – moterims, čia nebus pasyvių stebėtojų, visos taps dalyvėmis. Pojūčių teatro ir Kauno miesto kamerinio teatro merginos kartu su veiksmo dalyvėmis tyrinės savo prigimtį per kasdienius ir archajiškus ritualus. Tai – savotiška jausminė moterų pirtis, kur gera būti savimi tarp savų. Tekėti kaip upei su begale nematomų tamsių srovių, niūniuoti ir kikenti, užuosti savo odos poras. Savo tikrosios vidinės odos, kurią užsiauginome storą arba randuotą, bet kuri vis dar yra be galo jautri, gebanti klausyti, atjausti, džiuginti. Ritualas Kauno miesto kamerinio teatro rūsyje kviečia nusivalyti kasdienį grimą ir leisti sau pabūti jautriomis, stipriomis, smalsiomis – tiesiog pabūti moterimis.',
+                lt: '„Atvira oda“ – tai teatrinis ritualas, skirtas tik mums – moterims, čia nebus pasyvių stebėtojų, visos taps dalyvėmis. Pojūčių teatro ir Kauno miesto kamerinio teatro merginos kartu su veiksmo dalyvėmis tyrinės savo prigimtį per kasdienius ir archajiškus ritualus. Tai – savotiška jausminė moterų pirtis, kur gera būti savimi tarp savų. Tekėti kaip upei su begale nematomų tamsių srovių, niūniuoti ir kikenti, užuosti savo odos poras. Savo tikrosios vidinės odos, kurią užsiauginome storą arba randuotą, bet kuri vis dar yra be galo jautri, gebanti klausyti, atjausti, džiuginti. Ritualas Kauno miesto kamerinio teatro rūsyje kviečia nusivalyti kasdienį grimą ir leisti sau pabūti jautriomis, stipriomis, smalsiomis – tiesiog pabūti moterimis.'
             },
             readMore: {
                 en: '',
@@ -514,7 +530,11 @@ export const works = {
                 lt: 'Režisierė: Karolina ŽERNYTĖ \n Dailininkė: Šarūnė PEČIUKONYTĖ \n Kūrėjai: Aistė JANČIŪTĖ, ' +
                 'Raminta ŠNIAUKŠTAITĖ, Artūras LEPIOCHINAS, Jaunius PISARAVIČIUS, Vaidotas BAČIANSKAS'
             },
-            images: [],
+            images: [
+                {src: 'open-skin/IMG_1529.jpg'},
+                {src: 'open-skin/IMG_1653.jpg'},
+                {src: 'open-skin/IMG_1913.jpg'}
+            ],
             imagesAuthor: '',
             rider: {
                 duration: {en: '60 minutes', lt: '60 minučių'},
@@ -533,8 +553,8 @@ export const works = {
             date: '2016/10/12',
             name: {en: 'Music in the darkness', lt: 'Muzika tamsoje'},
             description: {
-                en: 'en description',
-                lt: 'lt description'
+                en: 'Muzika - kurią gali užuosti, muzika - kurią gali paliesti, muzika - kurios negali matyti. Įvairių muzikos sričių kūrėjai, "Pojūčių teatras" ir aklųjų choro "Feniksas" dainininkai suvienijo jėgas unikaliam projektui "Muzikos kalba tamsoje". Oras, Vanduo, Ugnis, Žemė ir Erdvė - tai penki elementai, kuriuos kūrėjai padės išgirsti ir pajusti misterijos metu. Svarbiausias koncerto vaidmuo atiteks klausytojams – jie visą vyksmą patirs užrištomis akimis ir turės galimybę keliauti vedami savo vaizduotės: išgirsti žemės pulsavimą, užuosti vandenį, judėti ugnies ritmu, virpėti kaip oras.',
+                lt: 'Muzika - kurią gali užuosti, muzika - kurią gali paliesti, muzika - kurios negali matyti. Įvairių muzikos sričių kūrėjai, "Pojūčių teatras" ir aklųjų choro "Feniksas" dainininkai suvienijo jėgas unikaliam projektui "Muzikos kalba tamsoje". Oras, Vanduo, Ugnis, Žemė ir Erdvė - tai penki elementai, kuriuos kūrėjai padės išgirsti ir pajusti misterijos metu. Svarbiausias koncerto vaidmuo atiteks klausytojams – jie visą vyksmą patirs užrištomis akimis ir turės galimybę keliauti vedami savo vaizduotės: išgirsti žemės pulsavimą, užuosti vandenį, judėti ugnies ritmu, virpėti kaip oras.'
             },
             readMore: {
                 en: '',
@@ -546,7 +566,14 @@ export const works = {
                 lt: 'Režisierė: Karolina ŽERNYTĖ \n Dailininkė: Šarūnė PEČIUKONYTĖ \n Kūrėjai: Aistė JANČIŪTĖ, ' +
                 'Raminta ŠNIAUKŠTAITĖ, Artūras LEPIOCHINAS, Jaunius PISARAVIČIUS, Vaidotas BAČIANSKAS'
             },
-            images: [],
+            images: [
+                {src: 'music-in-the-darkness/1.jpg'},
+                {src: 'music-in-the-darkness/2.JPG'},
+                {src: 'music-in-the-darkness/3.jpeg'},
+                {src: 'music-in-the-darkness/4.jpg'},
+                {src: 'music-in-the-darkness/5.jpg'},
+                {src: 'music-in-the-darkness/6.jpg'}
+            ],
             imagesAuthor: '',
             rider: {
                 duration: {en: '60 minutes', lt: '60 minučių'},

@@ -8,8 +8,6 @@ class Work extends Component {
     constructor(props) {
         super(props)
 
-        let defaultSlug = this.props.match.params.name ? this.props.match.params.name : props.data.slug
-
         this.state = {
             lightboxIsOpen: false,
             currentImage: 0,
@@ -23,7 +21,6 @@ class Work extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-
         this.setState({
             lightboxIsOpen: false,
             currentImage: 0,
@@ -75,12 +72,8 @@ class Work extends Component {
 
     render() {
 
-        const lang = this.props.lang
-
-        console.log('Work', this.props)
-
-        let work = this.props.data
-        let label = this.props.data.labels
+        let work = this.props.work
+        let label = this.props.works.labels
 
         return (
             <div>

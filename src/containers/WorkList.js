@@ -10,19 +10,16 @@ class WorkList extends Component {
     constructor(props) {
         super(props)
 
-        console.log('WorkList', props)
-
-        props.data.works.sort((a, b) => b.date.localeCompare(a.date))
+        props.works.works.sort((a, b) => b.date.localeCompare(a.date))
     }
 
     render() {
 
         const lang = this.props.lang
 
-        let data = this.props.data
+        let works = this.props.works.works
 
-
-        let label = data.labels
+        let label = this.props.works.labels
 
         return (
             <div key="works">
@@ -30,9 +27,10 @@ class WorkList extends Component {
                 <div className="works-block">
                     <div className="App-right-heading-works">{label.title}</div>
                     <div className="works-menu">
-                    {data.works.map((item,i) => {
+                    {works.map((item,i) => {
 
-                        let defaultSlug = this.props.match.params.name ? this.props.match.params.name : i === 0 ? item.slug : ''
+                        // this.props.work comes from react-static children route
+                        let defaultSlug = this.props.work ? this.props.work.slug : ''
                         let itemClasses = classNames('works-menu-item', { worksmenuitemactive: item.slug === defaultSlug })
 
                         return (
@@ -44,7 +42,7 @@ class WorkList extends Component {
                     </div>
                 </div>
 
-                <Route path={`/:lang/works/:name`} render={() => <Work lang={lang} />} />
+                <Route path={`/:lang/works/:name`} component={Work} />
 
             </div>
         )
