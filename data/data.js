@@ -423,43 +423,9 @@ export const events = {
     ]
 };
 
-export const workList = {
-
-    labels: {
-        title: {en: 'Works', lt: 'Darbai'},
-    },
-
-    works: [
-        {
-            slug: 'weight-gravity',
-            date: '2017/12/12',
-            name: {en: 'Weight. Gravity', lt: 'Svoris. Trauka'},
-        },
-        {
-            slug: 'ciurlionis',
-            date: '2017/09/12',
-            name: {
-                en: 'Paintings for senses: Čiurlionis', lt: 'Pojūčių paveikslai: Čiurlionis'
-            }
-            ,
-        }
-        ,
-        {
-            slug: 'open-skin',
-            date: '2017/03/04',
-            name: {
-                en: 'Open skin', lt: 'Atvira oda'
-            }
-            ,
-        }
-        ,
-
-
-    ]
-}
-
 export const works = {
     labels: {
+        title: {en: 'Works', lt: 'Darbai'},
         performers: {en: 'Team', lt: 'Kūrybinė komanda'},
         imagesAuthor: {en: 'Photos by', lt: 'Nuotraukų autorius'},
         rider: {en: 'Technical rider', lt: 'Raideris'},

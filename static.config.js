@@ -29,19 +29,16 @@ export default {
                 {
                     path: `/${lang}/works`,
                     getProps: () => ({
-                        data: filterLanguage(JSON.parse(JSON.stringify(workList)), lang),
-                    }),
-                },
-
-                ...works.works.map(work => ({
-                    path: `/${lang}/works/${work.slug}`,
-                    getProps: () => ({
                         data: filterLanguage(JSON.parse(JSON.stringify(works)), lang),
                     }),
+                    children: works.works.map(work => ({
+                        path: `/${work.slug}`,
+                        getProps: () => ({
+                            data: filterLanguage(Object.assign({}, {labels: works.labels}, work), lang),
+                        }),
+                    }))
 
-                }))
-
-
+                },
 
             ]
         })
@@ -49,6 +46,7 @@ export default {
         let flattened = [].concat(...array)
 
         return [
+
             {
                 path: '/',
             },

@@ -8,15 +8,11 @@ class Work extends Component {
     constructor(props) {
         super(props)
 
-        // sort by date
-        props.data.works.sort((a, b) => b.date.localeCompare(a.date))
-
-        let defaultSlug = this.props.match.params.name ? this.props.match.params.name : props.data.works[0].slug
+        let defaultSlug = this.props.match.params.name ? this.props.match.params.name : props.data.slug
 
         this.state = {
             lightboxIsOpen: false,
             currentImage: 0,
-            work: props.data.works.find(work => work.slug === defaultSlug),
             readMore: false,
         }
 
@@ -81,10 +77,10 @@ class Work extends Component {
 
         const lang = this.props.lang
 
-        let data = this.props.data
+        console.log('Work', this.props)
 
-        let work = this.state.work
-        let label = data.labels
+        let work = this.props.data
+        let label = this.props.data.labels
 
         return (
             <div>
@@ -109,7 +105,7 @@ class Work extends Component {
 
                 {work.imagesAuthor && <div className="photosBy">{label.imagesAuthor} {work.imagesAuthor}</div>}
 
-                <div className="App-right-subheading"><b>{data.labels.performers}</b></div>
+                <div className="App-right-subheading"><b>{label.performers}</b></div>
                 <div className="App-right-text performers">
                     {work.performers.split('\n').map((item, key) => <span key={key}>{item}<br/></span>)}
                 </div>

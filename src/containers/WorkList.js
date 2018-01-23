@@ -13,7 +13,6 @@ class WorkList extends Component {
         console.log('WorkList', props)
 
         props.data.works.sort((a, b) => b.date.localeCompare(a.date))
-
     }
 
     render() {
@@ -21,6 +20,7 @@ class WorkList extends Component {
         const lang = this.props.lang
 
         let data = this.props.data
+
 
         let label = data.labels
 
